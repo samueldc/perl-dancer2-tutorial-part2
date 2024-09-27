@@ -1,1 +1,0 @@
-{"vars":[{"containerName":"","name":"Dancer2","kind":2,"line":1},{"definition":"our","line":3,"name":"$VERSION","kind":13,"containerName":"main::"},{"line":5,"name":"get","kind":12},{"kind":12,"name":"template","line":6},{"line":9,"name":"true","kind":12}],"version":5}
