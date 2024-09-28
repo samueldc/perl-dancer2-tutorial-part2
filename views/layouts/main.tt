@@ -15,9 +15,21 @@
 
 </head>
 <body>
-<% content %>
-<div id="footer">
-Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
-</div>
+  <div class=page>
+  <h1>dancr</h1>
+      <div class=metanav>
+      [% IF not session.logged_in %]
+        <a href="[% login_url %]">log in</a>
+      [% ELSE %]
+        <a href="[% logout_url %]">log out</a>
+      [% END %]
+  </div>
+  [% IF msg %]
+    <div class=flash> [% msg %] </div>
+  [% END %]
+  <% content %>
+  <div id="footer">
+    Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
+  </div>
 </body>
 </html>
