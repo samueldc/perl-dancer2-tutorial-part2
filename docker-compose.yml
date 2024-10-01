@@ -1,0 +1,4 @@
+services:
+  httpd:
+    build:
+      dockerfile: ./docker/Dockerfile
